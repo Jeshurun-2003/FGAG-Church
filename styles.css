@@ -41,3 +41,15 @@ body{
 .nav-item{
   padding: 20px;
 }
+
+/* footer details */
+.footer{
+  text-align: center;
+  height: 70px;
+  background-color: #2C3E50;
+  color: #CCCCCC;
+}
+
+.social_media_links{
+  background-color:#445d76;
+}
