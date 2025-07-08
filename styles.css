@@ -34,7 +34,10 @@ body{
 }
 
 .navbar-brand {
-  height: 5.5rem;
+  height: 7.5rem;
 }
 
 
+.nav-item{
+  padding: 20px;
+}
