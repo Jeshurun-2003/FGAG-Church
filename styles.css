@@ -1,5 +1,6 @@
 body{
     background-color: 	#F8F1E5;
+    padding-top: 70px;
 }
 
 /* Color of the links BEFORE scroll */
@@ -53,3 +54,4 @@ body{
 .social_media_links{
   background-color:#445d76;
 }
+
