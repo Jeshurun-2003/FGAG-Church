@@ -1,6 +1,9 @@
 body{
+    font-family: 'Lora', serif;
+    font-size: 16px;
     background-color: 	#F8F1E5;
-    padding-top: 70px;
+    padding-top: 150px;
+    color: #1C1C1C;
 }
 
 /* Color of the links BEFORE scroll */
@@ -8,22 +11,26 @@ body{
 .navbar-scroll .navbar-toggler-icon,
 .navbar-scroll .navbar-brand {
   color: white;
+  font-family: 'Lora', serif;
 }
 
 /* Color of the navbar BEFORE scroll */
 .navbar-scroll {
   background-color: 	#2C3E50;
+  font-family: 'Lora', serif;
 }
 
 /* Color of the links AFTER scroll */
 .navbar-scrolled .nav-link,
 .navbar-scrolled .navbar-toggler-icon,
 .navbar-scroll .navbar-brand {
+  font-family: 'Lora', serif;
   color: #262626;
 }
 
 /* Color of the navbar AFTER scroll */
 .navbar-scrolled {
+  font-family: 'Lora', serif;
   background-color: #fff;
 
 }
@@ -47,11 +54,56 @@ body{
 .footer{
   text-align: center;
   height: 70px;
-  background-color: #2C3E50;
   color: #CCCCCC;
+  font-family: 'Lora', serif;
+  background-color: #1A1A1A;
 }
 
 .social_media_links{
-  background-color:#445d76;
+    font-family: 'Lora', serif;
+  background-color: #1A1A1A;
 }
 
+.heading_1 {
+  color: #2C3E50; /* Deep Blue */
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.heading_2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #2C3E50;
+}
+
+h3{
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: #2C3E50;
+}
+
+.paragraph{
+  color: #1A1A1A; /* Charcoal for readability */
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* get involved page styles */
+.form-container {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .form-heading {
+      font-weight: bold;
+    }
+
+    textarea {
+      resize: none;
+    }
