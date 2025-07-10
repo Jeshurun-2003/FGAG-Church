@@ -64,6 +64,7 @@ body{
   background-color: #1A1A1A;
 }
 
+/* heading details */
 .heading_1 {
   color: #2C3E50; /* Deep Blue */
   font-family: 'Playfair Display', serif;
@@ -90,6 +91,19 @@ h3{
   font-family: 'Lora', serif;
   font-size: 16px;
   line-height: 1.7;
+}
+
+/* button details */
+.button-primary {
+  background-color: #3498DB;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.button-primary:hover {
+  background-color: #5DADE2;
 }
 
 /* get involved page styles */
