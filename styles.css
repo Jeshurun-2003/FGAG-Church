@@ -94,7 +94,7 @@ h3{
 }
 
 /* button details */
-.button-primary {
+.btn-primary {
   background-color: #3498DB;
   color: white;
   border: none;
@@ -102,7 +102,7 @@ h3{
   border-radius: 5px;
 }
 
-.button-primary:hover {
+.btn-primary:hover {
   background-color: #5DADE2;
 }
 
