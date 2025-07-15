@@ -1,18 +1,21 @@
 body{
     font-family: 'Lora', serif;
     font-size: 16px;
-    background-color: 	#F8F1E5;
+    background-color: 	#F8F9FA;
     padding-top: 150px;
     color: #1C1C1C;
 }
 
 /* Color of the links BEFORE scroll */
 .navbar {
-  background-color: 	#2C3E50;
+  background-color: 			#0A3D62;
   color: white;
   font-family: 'Lora', serif;
 }
 
+.section-bg{
+  background-color: #E9F1F7;
+}
 
 .navbar-brand {
   height: 7.5rem;
@@ -29,17 +32,17 @@ body{
   height: 70px;
   color: #CCCCCC;
   font-family: 'Lora', serif;
-  background-color: #1A1A1A;
+  background-color: #0A3D62;
 }
 
 .social_media_links{
     font-family: 'Lora', serif;
-  background-color: #1A1A1A;
+  background-color: #0A3D62;
 }
 
 /* heading details */
 .heading_1 {
-  color: #2C3E50; /* Deep Blue */
+  color: #3C6382; /* Deep Blue */
   font-family: 'Playfair Display', serif;
   font-size: 42px;
   font-weight: 700;
@@ -49,14 +52,14 @@ body{
   font-family: 'Playfair Display', serif;
   font-size: 32px;
   font-weight: 600;
-  color: #2C3E50;
+  color: #3C6382;
 }
 
 h3{
   font-family: 'Playfair Display', serif;
   font-size: 26px;
   font-weight: 500;
-  color: #2C3E50;
+  color: #3C6382;
 }
 
 .paragraph{
@@ -68,7 +71,7 @@ h3{
 
 /* button details */
 .btn-primary {
-  background-color: #3498DB;
+  background-color: 	#38A1DB !important;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -76,7 +79,7 @@ h3{
 }
 
 .btn-primary:hover {
-  background-color: #5DADE2;
+  background-color: 	#227093 !important;
 }
 
 /* get involved page styles */
