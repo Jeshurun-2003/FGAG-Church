@@ -1,54 +1,69 @@
-body{
-    font-family: 'Lora', serif;
-    color: #1C1C1C;
-    font-size: 16px;
-    background-color: 	#F8F9FA;
+@media (max-width: 991.98px) {
+  .navbar-brand img {
+    height: 45px;
+    width: auto;
+    margin-top: -30px;  /* pull logo up */
+  }
+  .navbar {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+  }
+}
+body {
+  font-family: "Lora", serif;
+  color: #1c1c1c;
+  font-size: 16px;
+  background-color: #f8f9fa;
 }
 
 /* navbar details */
- .navbar {
-      height: 140px;
-      font-family: 'Lora', serif;
-      background-color: #0A3D62;
-    }
-    .navbar-nav .nav-link {
-      color: #ffffff;
-      margin: 0 10px;
-      padding: 8px 12px;
-      font-weight: 500;
-    }
-    .navbar-nav .nav-link:hover {
-      background-color: #227093;
-      border-radius: 6px;
-      color: #fff;
-    }
-    .navbar-brand img {
-      height: 180px;
-      width: 230px;
-    }
-    .offer-btn {
-      background-color: #38A1DB;
-      color: #fff;
-      width: 100px;
-      margin-left: 8px;
-      text-align: center;
-      padding: 8px 14px;
-      border-radius: 6px;
-      font-weight: 500;
-      text-decoration: none;
-    }
-    .offer-btn:hover {
-      background-color: #227093;
-    }
+.navbar {
+  height: 140px;
+  font-family: "Lora", serif;
+  background-color: #0a3d62;
+    padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.navbar-nav .nav-link {
+  color: #ffffff;
+  margin: 0 10px;
+  padding: 8px 12px;
+  font-weight: 500;
+}
+.navbar-nav .nav-link:hover {
+  background-color: #227093;
+  border-radius: 6px;
+  color: #fff;
+}
+.navbar-brand img {
+  height: 180px;
+  width: 230px;
+  object-fit: contain;
+}
 
-    /* Mobile navbar */
-    .mobile-slide-menu {
+.offer-btn {
+  background-color: #38a1db;
+  color: #fff;
+  width: 100px;
+  margin-left: 8px;
+  text-align: center;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.offer-btn:hover {
+  background-color: #227093;
+}
+
+/* Mobile navbar */
+.mobile-slide-menu {
   position: fixed;
   top: 0;
   right: -300px;
   height: 100vh;
   width: 250px;
-  background-color: #0A3D62;
+  background-color: #0a3d62;
   z-index: 999;
   padding: 1rem 1rem;
   transition: right 0.3s ease;
@@ -65,7 +80,7 @@ body{
 }
 
 .mobile-slide-menu .offer-btn {
-  background-color: #FFC107;
+  background-color: #ffc107;
   padding: 6px 15px;
   border-radius: 6px;
   text-decoration: none;
@@ -82,44 +97,43 @@ body{
   right: 15px;
 }
 
-
 /* section details */
-.section-bg{
-  background-color: #E9F1F7;
+.section-bg {
+  background-color: #e9f1f7;
 }
 
 /* heading details */
 .heading_1 {
-  color: #3C6382; /* Deep Blue */
-  font-family: 'Playfair Display', serif;
+  color: #3c6382; /* Deep Blue */
+  font-family: "Playfair Display", serif;
   font-size: 42px;
   font-weight: 700;
 }
 
 .heading_2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 32px;
   font-weight: 600;
-  color: #3C6382;
+  color: #3c6382;
 }
 
-h3{
-  font-family: 'Playfair Display', serif;
+h3 {
+  font-family: "Playfair Display", serif;
   font-size: 26px;
   font-weight: 500;
-  color: #3C6382;
+  color: #3c6382;
 }
 
-.paragraph{
-  color: 	#2F2F2F; /* Charcoal for readability */
-  font-family: 'Lora', serif;
+.paragraph {
+  color: #2f2f2f; /* Charcoal for readability */
+  font-family: "Lora", serif;
   font-size: 16px;
   line-height: 1.7;
 }
 
 /* button details */
 .btn-primary {
-  background-color: 	#38A1DB !important;
+  background-color: #38a1db !important;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -127,21 +141,21 @@ h3{
 }
 
 .btn-primary:hover {
-  background-color: 	#227093 !important;
+  background-color: #227093 !important;
 }
 
 /* get involved page styles */
 .form-container {
-      background-color: white;
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
 
-    .form-heading {
-      font-weight: bold;
-    }
+.form-heading {
+  font-weight: bold;
+}
 
-    textarea {
-      resize: none;
-    }
+textarea {
+  resize: none;
+}
