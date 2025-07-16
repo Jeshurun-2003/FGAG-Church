@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Friends Garden AG Church</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Friends Garden AG Church</title>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 
-      body {
-        font-family: 'Lora', serif;
-    color: #1C1C1C;
-  line-height: 1.7;
-  letter-spacing: 0.3px;
-  font-size: 1.05rem;
-}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons (Optional) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.7 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: 'Lora', serif;
+      color: #1C1C1C;
+      line-height: 1.7;
+      letter-spacing: 0.3px;
+      font-size: 1.05rem;
+    }
 
     .leader-card {
       transition: all 0.3s ease;
@@ -39,21 +46,27 @@
       display: block;
     }
 
-    .church-img{
+    .church-img {
       height: 300px;
+      float: right;
     }
   </style>
-  </head>
+</head>
+
 <body>
-   <!-- Responsive Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark">
+  <!-- Responsive Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark position-relative" style="background-color: #0A3D62;">
   <div class="container">
     <a class="navbar-brand" href="./index.html">
       <img src="./images/Church_logo.png" alt="Church Logo">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+    <!-- Hamburger Button -->
+    <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!-- Mobile Slide-in Menu -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav ms-lg-auto me-2">
         <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
@@ -64,45 +77,88 @@
         <li class="nav-item"><a class="nav-link" href="./get_involved.html">Get Involved</a></li>
         <li class="nav-item"><a class="nav-link" href="./contact_us.html">Contact Us</a></li>
       </ul>
-      <a href="#" class="offer-btn">Offer</a>
+      <a href="#" class="offer-btn ms-3">Offer</a>
+    </div>
+
+    <!-- Slide Menu for Mobile -->
+    <div class="mobile-slide-menu d-lg-none" id="mobileMenu">
+      <button class="close-btn" onclick="toggleMenu()">×</button>
+      <ul class="navbar-nav text-end pe-3 pt-4">
+        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="./about_us.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="./events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="./ministries.html">Ministries</a></li>
+        <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="./get_involved.html">Get Involved</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contact_us.html">Contact Us</a></li>
+        <li><a href="#" class="offer-btn d-inline-block mt-2">Offer</a></li>
+      </ul>
     </div>
   </div>
 </nav>
 
- <div class="container py-3">
+  <div class="container py-3">
     <!-- Bible Verse on top -->
-    <div class="text-center mb-4" data-aos="fade-down">
+    <div class="text-center mb-4 my-5" data-aos="fade-down">
       <blockquote class="blockquote fst-italic">
         <p>“Upon this rock I will build my church...”</p>
-        <footer class="blockquote-footer">Matthew 16:18</footer>
+        <footer class="blockquote-footer pb-4">Matthew 16:18</footer>
       </blockquote>
     </div>
 
     <!-- Church Name and Image -->
-    <div class="row align-items-center mb-5 section-bg p-4 rounded" data-aos="fade-up">
-      <div class="col-md-6 order-md-1 order-2">
-        <h2 class="my-4">Friends Garden AG Church</h2>
-        <p>Friends Garden A.G Church is part of Assemblies of God India. We began in 2019, and our church is located in Kollidam, Mayiladuthurai District. Today, we are blessed to have more than 25 families as part of our church community.
-          <br>
-          <br>
-Right after we started, we faced a big challenge — the COVID-19 pandemic. The church was closed for almost one and a half years, but even during that time, people stayed faithful to the fellowship. By God’s grace, we continued to grow, little by little.
-</p>
-      </div>
-      <div class="col-md-6 order-md-2 order-1 text-center">
-        <img src="./images/Church_img.jpg" alt="Church" class="img-fluid rounded church-img">
+    <div class="row mb-5 section-bg p-4 rounded shadow-sm" data-aos="fade-up">
+      <div class="col-12">
+        <h2 class="fw-bold heading_2 border-bottom py-4 mb-4">
+          Friends Garden AG Church
+        </h2>
+
+        <!-- use this if there was an error in future <img src="./images/Church_img.jpg" alt="Church"
+         class="img-fluid rounded-4 float-end ms-4 mb-3 shadow-sm"
+         style="width: 400px; height: 250px;"> -->
+
+        <img src="./images/Church_img.jpg" alt="Church" class="img-fluid rounded-4 float-end ms-4 mb-3 shadow-sm"
+          style="width: 400px; height: 250px;">
+
+        <p class="text-secondary mt-4" style="line-height: 1.7;">
+          <strong>Friends Garden A.G Church</strong> is more than just a building — it’s a
+          family of believers united in Christ. Rooted in God's Word and guided by the Holy Spirit, our church exists to
+          glorify God, preach the Gospel, and serve the world with love and compassion. We are a welcoming community
+          where faith grows, lives are transformed, and Jesus is the center of everything we do. Whether you're seeking
+          hope, healing, or a place to belong, you are welcome here.
+          <br><br>
+          At<strong> Friends Garden AG Church, </strong>we believe the church is not just a place you go — it’s a family
+          you belong to. We are a vibrant, Spirit-led
+          community that seeks to reflect the love of Christ in all we do. Whether you're new to faith or have walked
+          with God for years, you'll find a warm and welcoming home here.
+          <br><br>
+          Our foundation is built on the unchanging truth of God's Word. We believe the Bible is alive and powerful,
+          guiding us in every step of life. Through prayer, worship, and discipleship, we grow together in faith and
+          purpose.We exist not only to worship but to serve. Our church is active in outreach, missions, and community
+          care. From helping the needy to encouraging the brokenhearted, we believe faith must be lived out with
+          compassion and love.
+          <br><br>
+          <strong>A place for everyone - </strong>No matter your background, age, or story — you are welcome. We embrace
+          diversity and unity, knowing that in Christ we are one body. Every Sunday, we gather to celebrate God’s
+          goodness, learn His truth, and support each other through life’s journey.
+        </p>
       </div>
     </div>
+
+
 
     <!-- Pastor's Message -->
     <div class="card shadow-sm border-start border-4 border-primary mb-5" data-aos="fade-up">
       <div class="row g-0 align-items-center mx-3">
         <div class="col-md-4 text-center">
-          <img src="./images/Pastor's_Family_Pic.jpg" alt="Pastor" class="img-fluid rounded-circle p-3" style="max-width: 300px;">
+          <img src="./images/Pastor's_Family_Pic.jpg" alt="Pastor" class="img-fluid rounded-circle p-3"
+            style="max-width: 300px;">
         </div>
         <div class="col-md-8">
           <div class="card-body">
             <h3 class="card-title mb-3">Pastor Amal M. Augustine's Message</h3>
-            <p class="card-text">Welcome to FGAG Church! It is our joy to serve the Lord together and grow in His grace. May you find your spiritual home with us, and may His love abound in your life.</p>
+            <p class="card-text">Welcome to FGAG Church! It is our joy to serve the Lord together and grow in His grace.
+              May you find your spiritual home with us, and may His love abound in your life.</p>
           </div>
         </div>
       </div>
@@ -120,129 +176,42 @@ Right after we started, we faced a big challenge — the COVID-19 pandemic. The 
         </ul>
       </div>
       <div class="col-md-6 text-center">
-        <img src="./images/mission_vision.png" style="height: 300px; width: 600px;" alt="Mission and Vision" class="img-fluid rounded">
+        <img src="./images/mission_vision.png" style="height: 300px; width: 600px;" alt="Mission and Vision"
+          class="img-fluid rounded">
       </div>
     </div>
 
     <!-- Church History -->
     <div class="mb-5 section-bg p-4 rounded" data-aos="fade-up">
       <h3><i class="bi bi-clock-history"></i> Our Church History</h3>
-      <p>Started as a humble prayer gathering, FGAG Church has grown into a vibrant spiritual family, nurturing lives and serving the city for decades. We thank God for His continuous faithfulness.</p>
+      <p class="text-secondary mt-4" style="line-height: 1.7;">
+        <strong>Friends Garden A.G Church</strong> is part of Assemblies of God India. We began in 2019, and our
+        church is located in <strong>Kollidam, Mayiladuthurai District</strong>. Today, we are blessed to have more
+        than 25 families as part of our growing church community.
+        <br><br>
+        Right after we started, we faced a big challenge — the <strong>COVID-19 pandemic</strong>. The church was
+        closed for almost one and a half years, but even during that time, people stayed faithful to the fellowship.
+        <strong>By God’s grace</strong>, we continued to grow, little by little.
+        <br><br>
+        In the beginning, we faced opposition and were unable to rent a hall. But the Lord miraculously provided our
+        own land, just outside the town. Now, those who have their own transportation are able to attend church
+        regularly.
+        We have various ministries to help people grow in the Lord and to fulfill God’s Great Commission. <br><br>These
+        includes:<br>
+        • House prayers<br>
+        • Daily online prayer meetings<br>
+        • Fellowship groups for women, men, children, and youth <br><br>
+        By God's grace, we are growing steadily — in love, in the Word, in faith, in fellowship, in our knowledge of
+        the Lord, and in number.
+        All praise be to God!
+
+      </p>
       <blockquote class="blockquote fst-italic">
         <p>“Give thanks to the LORD, for He is good; His love endures forever.”</p>
         <footer class="blockquote-footer">Psalm 107:1</footer>
       </blockquote>
     </div>
 
-    <!-- Our Leaders Section -->
-    <div class="mb-5" data-aos="fade-up">
-      <h3 class="mb-4"><i class="bi bi-people"></i> Our Leaders</h3>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <!-- Leader Cards -->
-        <div class="col">
-          <div class="card h-100 leader-card">
-            <img src="leader1.jpg" class="card-img-top" alt="Leader 1">
-            <div class="leader-card card-body">
-              <h5 class="card-title mb-1">Leader Name 1</h5>
-              <div class="leader-leadership-age">
-                <div class="leader-role"><h6>Worship Leader</h6></div>
-                <p class="card-text">Friends Garden AG Church</p>
-              </div>
-              <button class="btn btn-outline-primary w-100" onclick="toggleInfo(this)">More Info</button>
-              <div class="more-info mt-2">
-                <p>Has led worship ministry for 10 years, passionate about creating a spirit-filled atmosphere.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 leader-card">
-            <img src="leader1.jpg" class="card-img-top" alt="Leader 1">
-            <div class="leader-card card-body">
-              <h5 class="card-title mb-1">Leader Name 1</h5>
-              <div class="leader-leadership-age">
-                <div class="leader-role"><h6>Worship Leader</h6></div>
-                <p class="card-text">Friends Garden AG Church</p>
-              </div>
-              <button class="btn btn-outline-primary w-100" onclick="toggleInfo(this)">More Info</button>
-              <div class="more-info mt-2">
-                <p>Has led worship ministry for 10 years, passionate about creating a spirit-filled atmosphere.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 leader-card">
-            <img src="leader1.jpg" class="card-img-top" alt="Leader 1">
-            <div class="leader-card card-body">
-              <h5 class="card-title mb-1">Leader Name 1</h5>
-              <div class="leader-leadership-age">
-                <div class="leader-role"><h6>Worship Leader</h6></div>
-                <p class="card-text">Friends Garden AG Church</p>
-              </div>
-              <button class="btn btn-outline-primary w-100" onclick="toggleInfo(this)">More Info</button>
-              <div class="more-info mt-2">
-                <p>Has led worship ministry for 10 years, passionate about creating a spirit-filled atmosphere.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 leader-card">
-            <img src="leader1.jpg" class="card-img-top" alt="Leader 1">
-            <div class="leader-card card-body">
-              <h5 class="card-title mb-1">Leader Name 1</h5>
-              <div class="leader-leadership-age">
-                <div class="leader-role"><h6>Worship Leader</h6></div>
-                <p class="card-text">Friends Garden AG Church</p>
-              </div>
-              <button class="btn btn-outline-primary w-100" onclick="toggleInfo(this)">More Info</button>
-              <div class="more-info mt-2">
-                <p>Has led worship ministry for 10 years, passionate about creating a spirit-filled atmosphere.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 leader-card">
-            <img src="leader1.jpg" class="card-img-top" alt="Leader 1">
-            <div class="leader-card card-body">
-              <h5 class="card-title mb-1">Leader Name 1</h5>
-              <div class="leader-leadership-age">
-                <div class="leader-role"><h6>Worship Leader</h6></div>
-                <p class="card-text">Friends Garden AG Church</p>
-              </div>
-              <button class="btn btn-outline-primary w-100" onclick="toggleInfo(this)">More Info</button>
-              <div class="more-info mt-2">
-                <p>Has led worship ministry for 10 years, passionate about creating a spirit-filled atmosphere.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 leader-card">
-            <img src="leader1.jpg" class="card-img-top" alt="Leader 1">
-            <div class="leader-card card-body">
-              <h5 class="card-title mb-1">Leader Name 1</h5>
-              <div class="leader-leadership-age">
-                <div class="leader-role"><h6>Worship Leader</h6></div>
-                <p class="card-text">Friends Garden AG Church</p>
-              </div>
-              <button class="btn btn-outline-primary w-100" onclick="toggleInfo(this)">More Info</button>
-              <div class="more-info mt-2">
-                <p>Has led worship ministry for 10 years, passionate about creating a spirit-filled atmosphere.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Duplicate this block for other leaders -->
-      </div>
-    </div>
 
     <!-- Our Beliefs -->
     <div class="mb-5 section-bg p-4 rounded" data-aos="fade-up">
@@ -265,33 +234,32 @@ Right after we started, we faced a big challenge — the COVID-19 pandemic. The 
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <footer style="background-color: #0A3D62; color: #F8F9FA; padding: 40px 0;">
+    <div class="container" style="text-align: center;">
+      <h4 style="color: #c5dced; margin-bottom: 20px;">Follow Us</h4>
+
+      <div style="font-size: 1.2rem; margin-bottom: 20px;">
+        <a href="https://www.instagram.com" target="_blank"
+          style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">📸 Instagram</a>
+        <a href="https://www.facebook.com" target="_blank"
+          style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">📘 Facebook</a>
+        <a href="https://www.twitter.com" target="_blank"
+          style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">🐦 Twitter</a>
+        <a href="https://wa.me/yourwhatsapplink" target="_blank"
+          style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">💬 WhatsApp</a>
+      </div>
+
+      <p style="font-size: 0.9rem; color: #E9F1F7;">&copy; 2025 Friends Garden AG Church. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
-  <script>
-    function toggleInfo(btn) {
-      const card = btn.closest('.card');
-      card.classList.toggle('show-info');
-    }
-  </script>
 
-<footer style="background-color: #0A3D62; color: #F8F9FA; padding: 40px 0;">
-  <div class="container" style="text-align: center;">
-    <h4 style="color: #c5dced; margin-bottom: 20px;">Follow Us</h4>
-    
-    <div style="font-size: 1.2rem; margin-bottom: 20px;">
-      <a href="https://www.instagram.com" target="_blank" style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">📸 Instagram</a>
-      <a href="https://www.facebook.com" target="_blank" style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">📘 Facebook</a>
-      <a href="https://www.twitter.com" target="_blank" style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">🐦 Twitter</a>
-      <a href="https://wa.me/yourwhatsapplink" target="_blank" style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">💬 WhatsApp</a>
-    </div>
+  <script src="nav-toggle.js"></script>
 
-    <p style="font-size: 0.9rem; color: #E9F1F7;">&copy; 2025 Friends Garden AG Church. All rights reserved.</p>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
 </body>
+
 </html>
