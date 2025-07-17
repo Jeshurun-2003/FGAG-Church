@@ -2,7 +2,7 @@
   .navbar-brand img {
     height: 45px;
     width: auto;
-    margin-top: -30px;  /* pull logo up */
+    margin-top: -30px; /* pull logo up */
   }
   .navbar {
     padding-top: 0.1rem;
@@ -21,7 +21,7 @@ body {
   height: 140px;
   font-family: "Lora", serif;
   background-color: #0a3d62;
-    padding-top: 0.3rem;
+  padding-top: 0.3rem;
   padding-bottom: 0.3rem;
 }
 .navbar-nav .nav-link {
@@ -103,7 +103,7 @@ body {
 }
 
 /* heading details */
-.heading{
+.heading {
   color: #3c6382; /* Deep Blue */
   font-family: "Playfair Display", serif;
 }
@@ -146,6 +146,20 @@ h3 {
 
 .btn-primary:hover {
   background-color: #227093 !important;
+}
+
+.btn-outline-primary {
+  color: #3c6382 !important;
+  border-color: #3c6382 !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: #38a1db !important;
+  color: white !important;
+  border-color: #3c6382 !important;
+  box-shadow: none !important; /* optional: remove blue focus ring */
 }
 
 /* get involved page styles */
