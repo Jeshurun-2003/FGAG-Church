@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Friends Garden AG Church</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Friends Garden AG Church</title>
   <!-- Your Custom CSS -->
   <link rel="stylesheet" href="styles.css">
 
@@ -14,301 +15,431 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
   <!-- Bootstrap 5.3.7 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <style>
     body {
       background: linear-gradient(to right, #e0f7fa, #f8f9fa);
       font-family: 'Lora', serif;
-    color: #1C1C1C;
+      color: #1C1C1C;
     }
+
     .event-card {
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
     }
 
     .card-img-top {
-    height: 200px;
-    object-fit: cover;
+      height: 200px;
+      object-fit: cover;
     }
 
     .video-responsive {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-}
+      position: relative;
+      padding-bottom: 56.25%;
+      /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+    }
 
-.video-responsive iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-}
-
+    .video-responsive iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
   </style>
-  </head>
+</head>
+
 <body>
   <!-- Responsive Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark position-relative" style="background-color: #0A3D62;">
-  <div class="container">
-    <a class="navbar-brand" href="./index.html">
-      <img src="./images/Church_logo.png" alt="Church Logo">
-    </a>
+  <nav class="navbar navbar-expand-lg navbar-dark position-relative" style="background-color: #0A3D62;">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./images/Church_logo.png" alt="Church Logo">
+      </a>
 
-    <!-- Hamburger Button -->
-    <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Mobile Slide-in Menu -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav ms-lg-auto me-2">
-        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="./about_us.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="./events.html">Events</a></li>
-        <li class="nav-item"><a class="nav-link" href="./ministries.html">Ministries</a></li>
-        <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="./get_involved.html">Get Involved</a></li>
-        <li class="nav-item"><a class="nav-link" href="./contact_us.html">Contact Us</a></li>
-      </ul>
-      <a href="#" class="offer-btn ms-3">Offer</a>
+      <!-- Mobile Slide-in Menu -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ms-lg-auto me-2">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about_us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="./events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="./ministries.html">Ministries</a></li>
+          <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="./get_involved.html">Get Involved</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact_us.html">Contact Us</a></li>
+        </ul>
+        <a href="#" class="offer-btn ms-3">Offer</a>
+      </div>
+
+      <!-- Slide Menu for Mobile -->
+      <div class="mobile-slide-menu d-lg-none" id="mobileMenu">
+        <button class="close-btn" onclick="toggleMenu()">×</button>
+        <ul class="navbar-nav text-end pe-3 pt-4">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about_us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="./events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="./ministries.html">Ministries</a></li>
+          <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="./get_involved.html">Get Involved</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact_us.html">Contact Us</a></li>
+          <li><a href="#" class="offer-btn d-inline-block mt-2">Offer</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5 pt-5 px-3 px-lg-0">
+    <div class="text-center mb-5">
+      <h1 class="display-5 fw-bold">Church Events & Gatherings</h1>
+      <p class="lead text-muted">Stay updated with our upcoming services, special events, and spiritual gatherings.</p>
     </div>
 
-    <!-- Slide Menu for Mobile -->
-    <div class="mobile-slide-menu d-lg-none" id="mobileMenu">
-      <button class="close-btn" onclick="toggleMenu()">×</button>
-      <ul class="navbar-nav text-end pe-3 pt-4">
-        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="./about_us.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="./events.html">Events</a></li>
-        <li class="nav-item"><a class="nav-link" href="./ministries.html">Ministries</a></li>
-        <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="./get_involved.html">Get Involved</a></li>
-        <li class="nav-item"><a class="nav-link" href="./contact_us.html">Contact Us</a></li>
-        <li><a href="#" class="offer-btn d-inline-block mt-2">Offer</a></li>
-      </ul>
+    <!-- Featured Event -->
+    <div class="card event-card mb-5 p-4">
+      <h3 class="mb-3">Upcoming Worship Night - August 20, 2025</h3>
+      <p>Join us for a special night of worship, prayer, and fellowship. All are welcome to attend this spirit-filled
+        evening with guest worship leaders and a powerful message.</p>
+      <p><strong>Time:</strong> 6:30 PM | <strong>Location:</strong> FGAG Main Hall</p>
+      <a href="#" class="btn btn-primary mt-2">Learn More</a>
     </div>
-  </div>
-</nav>
-
-<div class="container my-5 pt-5 px-3 px-lg-0">
-  <div class="text-center mb-5">
-    <h1 class="display-5 fw-bold">Church Events & Gatherings</h1>
-    <p class="lead text-muted">Stay updated with our upcoming services, special events, and spiritual gatherings.</p>
-  </div>
-
-   <!-- Featured Event -->
-  <div class="card event-card mb-5 p-4">
-    <h3 class="mb-3">Upcoming Worship Night - August 20, 2025</h3>
-    <p>Join us for a special night of worship, prayer, and fellowship. All are welcome to attend this spirit-filled evening with guest worship leaders and a powerful message.</p>
-    <p><strong>Time:</strong> 6:30 PM | <strong>Location:</strong> FGAG Main Hall</p>
-    <a href="#" class="btn btn-primary mt-2">Learn More</a>
-  </div>
 
 
-  <div class="container mb-5">
-  <h4 class="mb-4 text-center">⛪ Weekly Church Schedule</h4>
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+    <div class="container mb-5">
+      <h2 class="mt-5 mb-4 fw-bold text-center">⛪ Weekly Church Schedule</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
 
-    <!-- Sunday Card -->
-    <div class="col">
-      <div class="card h-100 rounded-4 shadow-sm">
-        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top rounded-top-4" alt="Worship Service">
-        <div class="card-body p-3">
-          <h6 class="text-primary fw-bold mb-1">Sunday</h6>
-          <h5 class="card-title mb-2">Worship Service</h5>
-          <p class="card-text small mb-1"><i class="bi bi-clock"></i> 10:00 AM – 12:00 PM</p>
-          <p class="card-text small"><i class="bi bi-geo-alt"></i> Main Sanctuary</p>
+        <!-- Sunday Serice Card -->
+        <div class="col">
+          <div class="card h-100 rounded-4 shadow-sm">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top rounded-top-4"
+              alt="Sunday Service">
+            <div class="card-body p-3">
+              <h5 class="text-primary fw-bold mb-3">Sunday</h5>
+              <h5 class="card-title mb-2">Sunday Service</h5>
+              <p class="card-text small mb-1"><i class="bi bi-clock"></i> 09:00 AM – 11:00 AM and 05:30 AM – 07:00 PM
+              </p>
+              <p class="card-text small"><i class="bi bi-geo-alt"></i> FGAG Church</p>
 
-          <!-- More Info Button -->
-          <button class="btn btn-sm btn-outline-primary mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#sundayInfo" aria-expanded="false" aria-controls="sundayInfo">
-            More Info
-          </button>
+              <!-- More Info Button -->
+              <button class="btn btn-sm btn-outline-primary mt-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#sundayServiceInfo" aria-expanded="false" aria-controls="sundayServiceInfo">
+                More Info
+              </button>
 
-          <!-- Collapsible Info -->
-          <div class="collapse mt-2" id="sundayInfo">
-            <div class="card card-body p-2 small bg-light border">
-              Join us every Sunday for a spirit-filled worship service, inspirational messages, and community fellowship.
+              <!-- Collapsible Info -->
+              <div class="collapse mt-2" id="sundayServiceInfo">
+                <div class="card card-body p-2 small bg-light border">
+                  We warmly welcome you to our Sunday worship services at Friends Garden AG Church. Every Sunday, we
+                  gather together in the presence of the Lord to worship, pray, and receive His Word with joy and
+                  reverence.
+                  <br><br>
+                  <strong>✝️ Service Timings:</strong>
+                  <br>
+                  <strong>⛪ Morning Service:</strong>🕘 9:00 AM to 11:00 AM <br>
+
+                  A spirit-filled service with worship, the Word, and fellowship. Ideal for families and all age groups.
+
+                  <strong>🌇 Evening Service: </strong>
+                  🕠 5:30 PM to 7:00 PM <br>
+                  A refreshing evening time of worship and the Word, perfect for those who cannot attend the morning
+                  service or wish to return for a second encounter with the Lord.
+                  <br><br>
+                  <strong>📍Location:</strong>
+                  Friends Garden AG Church
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Repeat this structure for other days -->
+        <!-- Repeat this structure for other days -->
 
-    <!-- Tuesday Card -->
-    <div class="col">
-      <div class="card h-100 rounded-4 shadow-sm">
-        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top rounded-top-4" alt="Prayer Meeting">
-        <div class="card-body p-3">
-          <h6 class="text-primary fw-bold mb-1">Tuesday</h6>
-          <h5 class="card-title mb-2">Prayer Meeting</h5>
-          <p class="card-text small mb-1"><i class="bi bi-clock"></i> 6:30 PM – 8:00 PM</p>
-          <p class="card-text small"><i class="bi bi-geo-alt"></i> Prayer Hall</p>
-          <button class="btn btn-sm btn-outline-primary mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#tuesdayInfo" aria-expanded="false" aria-controls="tuesdayInfo">
-            More Info
-          </button>
-          <div class="collapse mt-2" id="tuesdayInfo">
-            <div class="card card-body p-2 small bg-light border">
-              A time for deep intercessory prayer, praise, and personal breakthroughs.
+        <!-- Morning Prayer Card -->
+        <div class="col">
+          <div class="card h-100 rounded-4 shadow-sm">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top rounded-top-4"
+              alt="Morning Prayer">
+            <div class="card-body p-3">
+              <h5 class="text-primary fw-bold mb-3">Monday - Saturday</h5>
+              <h5 class="card-title mb-2">Morning Prayer</h5>
+              <p class="card-text small mb-1"><i class="bi bi-clock"></i> 6:00 AM – 6:30 AM</p>
+              <p class="card-text small"><i class="bi bi-geo-alt"></i> FGAG Church</p>
+              <button class="btn btn-sm btn-outline-primary mt-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#morningPrayerInfo" aria-expanded="false" aria-controls="morningPrayerInfo">
+                More Info
+              </button>
+              <div class="collapse mt-2" id="morningPrayerInfo">
+                <div class="card card-body p-2 small bg-light border">
+                  We warmly welcome you to our daily Morning Prayer at Friends Garden AG Church. From Monday to
+                  Saturday, we gather early in the morning to worship, pray, and dedicate our day to the Lord with a
+                  thankful heart.
+                  <br><br>
+                  <strong>🌅 Prayer Timing:</strong><br>
+                  🕕 6:00 AM to 6:30 AM <br>
+                  A peaceful and powerful start to your day with worship, a short word of encouragement, and
+                  intercession. Strengthen your spirit and walk with God throughout the day.
+                  <br><br>
+                  <strong>📍Location:</strong><br>
+                  Friends Garden AG Church
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col">
-      <div class="card h-100 rounded-4 shadow-sm">
-        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top rounded-top-4" alt="Worship Service">
-        <div class="card-body p-3">
-          <h6 class="text-primary fw-bold mb-1">Wednesday</h6>
-          <h5 class="card-title mb-2">Worship Service</h5>
-          <p class="card-text small mb-1"><i class="bi bi-clock"></i> 10:00 AM – 12:00 PM</p>
-          <p class="card-text small"><i class="bi bi-geo-alt"></i> Main Sanctuary</p>
+        <div class="col">
+          <div class="card h-100 rounded-4 shadow-sm">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top rounded-top-4"
+              alt="Women's fellowship">
+            <div class="card-body p-3">
+              <h5 class="text-primary fw-bold mb-3">2nd Saturday</h>
+                <h5 class="card-title mb-2">Women's Fellowship</h5>
+                <p class="card-text small mb-1"><i class="bi bi-clock"></i> 10:00 AM – 11:30 AM</p>
+                <p class="card-text small"><i class="bi bi-geo-alt"></i> FGAG Church</p>
 
-          <!-- More Info Button -->
-          <button class="btn btn-sm btn-outline-primary mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#wednesdayInfo" aria-expanded="false" aria-controls="wednesdayInfo">
-            More Info
-          </button>
+                <!-- More Info Button -->
+                <button class="btn btn-sm btn-outline-primary mt-1" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#womenFellowshipInfo" aria-expanded="false" aria-controls="womenFellowshipInfo">
+                  More Info
+                </button>
 
-          <!-- Collapsible Info -->
-          <div class="collapse mt-2" id="wednesdayInfo">
-            <div class="card card-body p-2 small bg-light border">
-              Join us every Sunday for a spirit-filled worship service, inspirational messages, and community fellowship.
+                <!-- Collapsible Info -->
+                <div class="collapse mt-2" id="womenFellowshipInfo">
+                  <div class="card card-body p-2 small bg-light border">
+                    We invite all women to join our special Women Fellowship at Friends Garden AG Church. It's a time
+                    for women to gather in unity, grow in faith, and encourage one another through the Word, worship,
+                    and prayer.
+                    <br><br>
+                    <strong>👩‍🦰 Fellowship Timing:</strong><br>
+                    🗓️ Every Month – Second Saturday <br>
+                    🕙 10:00 AM to 11:30 AM <br>
+                    A blessed gathering for women to deepen their spiritual walk, build lasting friendships, and be
+                    empowered by the Holy Spirit for everyday life.
+                    <br><br>
+                    <strong>📍Location:</strong><br>
+                    Friends Garden AG Church
+                  </div>
+                </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col">
-      <div class="card h-100 rounded-4 shadow-sm">
-        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top rounded-top-4" alt="Worship Service">
-        <div class="card-body p-3">
-          <h6 class="text-primary fw-bold mb-1">Thursday</h6>
-          <h5 class="card-title mb-2">Worship Service</h5>
-          <p class="card-text small mb-1"><i class="bi bi-clock"></i> 10:00 AM – 12:00 PM</p>
-          <p class="card-text small"><i class="bi bi-geo-alt"></i> Main Sanctuary</p>
+        <div class="col">
+          <div class="card h-100 rounded-4 shadow-sm">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top rounded-top-4"
+              alt="Men's fellowship">
+            <div class="card-body p-3">
+              <h5 class="text-primary fw-bold mb-3">3rd Sunday</h5>
+              <h5 class="card-title mb-2">Men's fellowship</h5>
+              <p class="card-text small mb-1"><i class="bi bi-clock"></i> 05:30 PM – 07:00 PM</p>
+              <p class="card-text small"><i class="bi bi-geo-alt"></i> FGAG Church</p>
 
-          <!-- More Info Button -->
-          <button class="btn btn-sm btn-outline-primary mt-2" type="button" data-bs-toggle="collapse" data-bs-target="thursdayInfo" aria-expanded="false" aria-controls="thursdayInfo">
-            More Info
-          </button>
+              <!-- More Info Button -->
+              <button class="btn btn-sm btn-outline-primary mt-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menFellowshipInfo" aria-expanded="false" aria-controls="menFellowshipInfo">
+                More Info
+              </button>
 
-          <!-- Collapsible Info -->
-          <div class="collapse mt-2" id="thursdayInfo">
-            <div class="card card-body p-2 small bg-light border">
-              Join us every Sunday for a spirit-filled worship service, inspirational messages, and community fellowship.
+              <!-- Collapsible Info -->
+              <div class="collapse mt-2" id="menFellowshipInfo">
+                <div class="card card-body p-2 small bg-light border">
+                  We encourage all men to be part of our Men’s Fellowship at Friends Garden AG Church. It’s a powerful
+                  time for men to grow spiritually, support one another, and lead their families and communities in
+                  godliness.
+                  <br><br>
+                  <strong>👨‍💼 Fellowship Timing:</strong><br>
+                  🗓️ Every Month – 3rd Sunday <br>
+                  ⏰ Held during the Evening Service (5:30 PM to 7:00 PM) <br>
+                  Join us for a time of fellowship, prayer, discussion, and teaching focused on building godly men who
+                  walk in strength, wisdom, and integrity.
+                  <br><br>
+                  <strong>📍Location:</strong><br>
+                  Friends Garden AG Church
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col">
-      <div class="card h-100 rounded-4 shadow-sm">
-        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top rounded-top-4" alt="Worship Service">
-        <div class="card-body p-3">
-          <h6 class="text-primary fw-bold mb-1">Friday</h6>
-          <h5 class="card-title mb-2">Worship Service</h5>
-          <p class="card-text small mb-1"><i class="bi bi-clock"></i> 10:00 AM – 12:00 PM</p>
-          <p class="card-text small"><i class="bi bi-geo-alt"></i> Main Sanctuary</p>
+        <div class="col">
+          <div class="card h-100 rounded-4 shadow-sm">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top rounded-top-4"
+              alt="Youth Service">
+            <div class="card-body p-3">
+              <h5 class="text-primary fw-bold mb-3">2nd Sunday</h5>
+              <h5 class="card-title mb-2">Youth Service</h5>
+              <p class="card-text small mb-1"><i class="bi bi-clock"></i> 09:00 AM – 11:00 AM</p>
+              <p class="card-text small"><i class="bi bi-geo-alt"></i> FGAG Church</p>
 
-          <!-- More Info Button -->
-          <button class="btn btn-sm btn-outline-primary mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#fridayInfo" aria-expanded="false" aria-controls="fridayInfo">
-            More Info
-          </button>
+              <!-- More Info Button -->
+              <button class="btn btn-sm btn-outline-primary mt-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#youthServiceInfo" aria-expanded="false" aria-controls="youthServiceInfo">
+                More Info
+              </button>
 
-          <!-- Collapsible Info -->
-          <div class="collapse mt-2" id="fridayInfo">
-            <div class="card card-body p-2 small bg-light border">
-              Join us every Sunday for a spirit-filled worship service, inspirational messages, and community fellowship.
+              <!-- Collapsible Info -->
+              <div class="collapse mt-2" id="youthServiceInfo">
+                <div class="card card-body p-2 small bg-light border">
+                  Our Youth Service at Friends Garden AG Church is a vibrant gathering of young hearts on fire for
+                  Jesus. It’s a space for the next generation to worship, learn, and grow together in Christ.
+                  <br><br>
+                  <strong>🧑‍🎓 Youth Service Timing:</strong><br>
+                  🗓️ Every Month – 2nd Sunday <br>
+                  ⏰ Held during the Evening Service (5:30 PM to 7:00 PM) <br>
+                  An energetic and inspiring time with worship, the Word, and creative expressions of faith — designed
+                  especially for youth to connect with God and each other.
+                  <br><br>
+                  <strong>📍Location:</strong><br>
+                  Friends Garden AG Church
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    
-    <div class="col">
-      <div class="card h-100 rounded-4 shadow-sm">
-        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top rounded-top-4" alt="Worship Service">
-        <div class="card-body p-3">
-          <h6 class="text-primary fw-bold mb-1">Saturday</h6>
-          <h5 class="card-title mb-2">Worship Service</h5>
-          <p class="card-text small mb-1"><i class="bi bi-clock"></i> 10:00 AM – 12:00 PM</p>
-          <p class="card-text small"><i class="bi bi-geo-alt"></i> Main Sanctuary</p>
 
-          <!-- More Info Button -->
-          <button class="btn btn-sm btn-outline-primary mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#saturdayInfo" aria-expanded="false" aria-controls="saturdayInfo">
-            More Info
-          </button>
+        <div class="col">
+          <div class="card h-100 rounded-4 shadow-sm">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top rounded-top-4"
+              alt="Worship Service">
+            <div class="card-body p-3">
+              <h5 class="text-primary fw-bold mb-3">4th Sunday</h5>
+              <h5 class="card-title mb-2">Healing Service</h5>
+              <p class="card-text small mb-1"><i class="bi bi-clock"></i> 09:00 AM – 11:00 AM</p>
+              <p class="card-text small"><i class="bi bi-geo-alt"></i> FGAG Church</p>
 
-          <!-- Collapsible Info -->
-          <div class="collapse mt-2" id="saturdayInfo">
-            <div class="card card-body p-2 small bg-light border">
-              Join us every Sunday for a spirit-filled worship service, inspirational messages, and community fellowship.
+              <!-- More Info Button -->
+              <button class="btn btn-sm btn-outline-primary mt-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#healingServiceInfo" aria-expanded="false" aria-controls="healingServiceInfo">
+                More Info
+              </button>
+
+              <!-- Collapsible Info -->
+              <div class="collapse mt-2" id="healingServiceInfo">
+                <div class="card card-body p-2 small bg-light border">
+                  Come and experience the healing touch of Jesus at our Healing Service in Friends Garden AG Church.
+                  It's a time of faith, prayer, and miracles where we believe God still heals and restores today.
+                  <br><br>
+                  <strong>🩺 Healing Service Timing:</strong><br>
+                  🗓️ Every Month – 4th Sunday <br>
+                  ⏰ Held during the Evening Service (5:30 PM to 7:00 PM) <br>
+                  A special service focused on physical, emotional, and spiritual healing through worship, the Word, and
+                  anointed prayer.
+                  <br><br>
+                  <strong>📍Location:</strong><br>
+                  Friends Garden AG Church
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
+        <div class="col">
+          <div class="card h-100 rounded-4 shadow-sm">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top rounded-top-4"
+              alt="Night Prayer">
+            <div class="card-body p-3">
+              <h5 class="text-primary fw-bold mb-3">4th Friday</h5>
+              <h5 class="card-title mb-2">Night Prayer</h5>
+              <p class="card-text small mb-1"><i class="bi bi-clock"></i> 09:00 PM – 12:00 AM</p>
+              <p class="card-text small"><i class="bi bi-geo-alt"></i> FGAG Church</p>
+
+              <!-- More Info Button -->
+              <button class="btn btn-sm btn-outline-primary mt-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#nightPrayerInfo" aria-expanded="false" aria-controls="nightPrayerInfo">
+                More Info
+              </button>
+
+              <!-- Collapsible Info -->
+              <div class="collapse mt-2" id="nightPrayerInfo">
+                <div class="card card-body p-2 small bg-light border">
+                  Join us for our monthly Night Prayer at Friends Garden AG Church — a powerful time of deep
+                  intercession, worship, and spiritual breakthrough. Come expectant for a fresh encounter with God.
+                  <br><br>
+                  <strong>🌙 Night Prayer Timing:</strong><br>
+                  🗓️ Every Month – 4th Friday <br>
+                  ⏰ 9:00 PM – 12:00 AM <br>
+                  A night set apart to seek the Lord, stand in the gap through prayer, and receive fresh strength and
+                  direction from the Holy Spirit.
+                  <br><br>
+                  <strong>📍Location:</strong><br>
+                  Friends Garden AG Church
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
 
-    <!-- Add similar "More Info" buttons + collapses for Wednesday, Friday, Saturday -->
-    <!-- Simply update IDs like #wednesdayInfo, #fridayInfo, etc. to keep them unique -->
+    <!-- YouTube Sermon Placeholder -->
+    <div class="mb-5">
+      <h2 class="mb-4 mx-3 fw-bold">Watch Our Latest Short Film 📽 </h2>
+      <div class="video-responsive">
+        <iframe width="460" height="215" src="https://www.youtube.com/embed/NW6D8yxm338?si=0rN7qnbGuDaifll9"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
 
+    <!-- Gallery -->
+    <div class="mb-5">
+      <h2 class="mb-4 fw-bold">Past Event Highlights</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-4">
+          <img src="https://via.placeholder.com/300x200?text=Event+1" class="img-fluid rounded" alt="Event 1">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="https://via.placeholder.com/300x200?text=Event+2" class="img-fluid rounded" alt="Event 2">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="https://via.placeholder.com/300x200?text=Event+3" class="img-fluid rounded" alt="Event 3">
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-  
-  <!-- YouTube Sermon Placeholder -->
-  <div class="mb-5">
-    <h4 class="mb-3">Watch Our Latest Short Film</h4>
-    <div class="video-responsive">
-      <iframe width="460" height="215" src="https://www.youtube.com/embed/NW6D8yxm338?si=0rN7qnbGuDaifll9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-  </div>
 
-  <!-- Gallery -->
-  <div class="mb-5">
-    <h4 class="mb-3">Past Event Highlights</h4>
-    <div class="row g-3">
-      <div class="col-6 col-md-4">
-        <img src="https://via.placeholder.com/300x200?text=Event+1" class="img-fluid rounded" alt="Event 1">
+  <footer style="background-color: #0A3D62; color: #F8F9FA; padding: 40px 0;">
+    <div class="container" style="text-align: center;">
+      <h4 style="color: #c5dced; margin-bottom: 20px;">Follow Us</h4>
+
+      <div style="font-size: 1.2rem; margin-bottom: 20px;">
+        <a href="https://www.instagram.com" target="_blank"
+          style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">📸 Instagram</a>
+        <a href="https://www.facebook.com" target="_blank"
+          style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">📘 Facebook</a>
+        <a href="https://www.twitter.com" target="_blank"
+          style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">🐦 Twitter</a>
+        <a href="https://wa.me/yourwhatsapplink" target="_blank"
+          style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">💬 WhatsApp</a>
       </div>
-      <div class="col-6 col-md-4">
-        <img src="https://via.placeholder.com/300x200?text=Event+2" class="img-fluid rounded" alt="Event 2">
-      </div>
-      <div class="col-6 col-md-4">
-        <img src="https://via.placeholder.com/300x200?text=Event+3" class="img-fluid rounded" alt="Event 3">
-      </div>
+
+      <p style="font-size: 0.9rem; color: #E9F1F7;">&copy; 2025 Friends Garden AG Church. All rights reserved.</p>
     </div>
-  </div>
-</div>
+  </footer>
 
-<footer style="background-color: #0A3D62; color: #F8F9FA; padding: 40px 0;">
-  <div class="container" style="text-align: center;">
-    <h4 style="color: #c5dced; margin-bottom: 20px;">Follow Us</h4>
-    
-    <div style="font-size: 1.2rem; margin-bottom: 20px;">
-      <a href="https://www.instagram.com" target="_blank" style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">📸 Instagram</a>
-      <a href="https://www.facebook.com" target="_blank" style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">📘 Facebook</a>
-      <a href="https://www.twitter.com" target="_blank" style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">🐦 Twitter</a>
-      <a href="https://wa.me/yourwhatsapplink" target="_blank" style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">💬 WhatsApp</a>
-    </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 
-    <p style="font-size: 0.9rem; color: #E9F1F7;">&copy; 2025 Friends Garden AG Church. All rights reserved.</p>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
-
-<script src="nav-toggle.js"></script>
+  <script src="nav-toggle.js"></script>
 
 </body>
+
 </html>
