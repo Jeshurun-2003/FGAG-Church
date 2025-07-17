@@ -15,28 +15,28 @@
 
   <!-- Bootstrap 5.3.7 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+   <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   
-    <style>
-    body {
-      background: linear-gradient(to right, #e0f7fa, #f8f9fa);
-      font-family: 'Lora', serif;
-    color: #1C1C1C;
-  
+   <style>
+    .gallery-card {
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
     }
-    .event-card {
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+
+    .gallery-card:hover {
+      transform: scale(1.02);
     }
-    .video-responsive {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-    }
-    .video-responsive iframe {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
+
+    .gallery-card img {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      height: 220px;
+      object-fit: cover;
     }
   </style>
   </head>
@@ -83,44 +83,85 @@
     </div>
   </div>
 </nav>
-<div class="container my-5 pt-5 px-3 px-lg-0">
-  <div class="text-center mb-5">
-    <h1 class="display-5 fw-bold">Church Events & Gatherings</h1>
-    <p class="lead text-muted">Stay updated with our upcoming services, special events, and spiritual gatherings.</p>
-  </div>
 
-  <!-- Featured Event -->
-  <div class="card event-card mb-5 p-4">
-    <h3 class="mb-3">Upcoming Worship Night - August 20, 2025</h3>
-    <p>Join us for a special night of worship, prayer, and fellowship. All are welcome to attend this spirit-filled evening with guest worship leaders and a powerful message.</p>
-    <p><strong>Time:</strong> 6:30 PM | <strong>Location:</strong> FGAG Main Hall</p>
-    <a href="#" class="btn btn-primary mt-2">Learn More</a>
-  </div>
+  <div class="container py-5">
+    <h2 class="heading fw-bold text-center mb-5" data-aos="fade-down">Church Gallery</h2>
+    <div class="row g-4">
 
-  <!-- YouTube Sermon Placeholder -->
-  <div class="mb-5">
-    <h4 class="mb-3">Watch Our Latest Sermon</h4>
-    <div class="video-responsive">
-      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+      <!-- Sunday Service Card -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="card gallery-card h-100">
+          <img src="gallery/sunday.jpg" class="card-img-top" alt="Sunday Service">
+          <div class="card-body text-center">
+            <h4 class="heading fw-bold">Sunday Service</h4>
+            <p class="paragraph card-text">Worship moments from our weekly gatherings.</p>
+            <a href="sunday-service.html" class="btn btn-primary">Show Pics</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Youth Meeting Card -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card gallery-card h-100">
+          <img src="gallery/youth.jpg" class="card-img-top" alt="Youth Meeting">
+          <div class="card-body text-center">
+            <h4 class="heading fw-bold">Youth Meeting</h4>
+            <p class="paragraph card-text">Energetic and fun times with our youth group.</p>
+            <a href="youth.html" class="btn btn-primary">Show Pics</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outreach Card -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card gallery-card h-100">
+          <img src="gallery/outreach.jpg" class="card-img-top" alt="Outreach">
+          <div class="card-body text-center">
+            <h4 class="heading fw-bold">Outreach</h4>
+            <p class="paragraph card-text">Moments from our community outreach programs.</p>
+            <a href="outreach.html" class="btn btn-primary">Show Pics</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Men Ministry Card -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card gallery-card h-100">
+          <img src="gallery/men.jpg" class="card-img-top" alt="Men's Ministry">
+          <div class="card-body text-center">
+            <h4 class="heading fw-bold">Men's Ministry</h4>
+            <p class="paragraph card-text">Fellowship and prayer meetings for men.</p>
+            <a href="men-ministry.html" class="btn btn-primary">Show Pics</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Christmas Celebration Card -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="card gallery-card h-100">
+          <img src="gallery/christmas.jpg" class="card-img-top" alt="Christmas">
+          <div class="card-body text-center">
+            <h4 class="heading fw-bold">Christmas Celebration</h4>
+            <p class="card-text paragraph">Joyous moments from our Christmas celebration.</p>
+            <a href="christmas.html" class="btn btn-primary">Show Pics</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Special Events Card -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="card gallery-card h-100">
+          <img src="gallery/special.jpg" class="card-img-top" alt="Special Events">
+          <div class="card-body text-center">
+            <h4 class="heading fw-bold">Special Events</h4>
+            <p class="paragraph card-text">Photos from conferences, retreats, and guest services.</p>
+            <a href="special-events.html" class="btn btn-primary">Show Pics</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-
-  <!-- Gallery -->
-  <div class="mb-5">
-    <h4 class="mb-3">Past Event Highlights</h4>
-    <div class="row g-3">
-      <div class="col-6 col-md-4">
-        <img src="https://via.placeholder.com/300x200?text=Event+1" class="img-fluid rounded" alt="Event 1">
-      </div>
-      <div class="col-6 col-md-4">
-        <img src="https://via.placeholder.com/300x200?text=Event+2" class="img-fluid rounded" alt="Event 2">
-      </div>
-      <div class="col-6 col-md-4">
-        <img src="https://via.placeholder.com/300x200?text=Event+3" class="img-fluid rounded" alt="Event 3">
-      </div>
-    </div>
-  </div>
-</div>
 
 <footer style="background-color: #0A3D62; color: #F8F9FA; padding: 40px 0;">
   <div class="container" style="text-align: center;">
@@ -138,8 +179,10 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
 
 <script src="nav-toggle.js"></script>
 
