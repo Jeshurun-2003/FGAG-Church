@@ -103,6 +103,10 @@ body {
 }
 
 /* heading details */
+.heading{
+  color: #3c6382; /* Deep Blue */
+  font-family: "Playfair Display", serif;
+}
 .heading_1 {
   color: #3c6382; /* Deep Blue */
   font-family: "Playfair Display", serif;
