@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Friends Garden AG Church</title>
-   <!-- Your Custom CSS -->
+  <!-- Your Custom CSS -->
   <link rel="stylesheet" href="styles.css">
 
   <!-- Google Fonts -->
@@ -14,102 +14,112 @@
   <!-- Bootstrap Icons (Optional) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <!-- Bootstrap 5.3.7 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
   <style>
-    body{
-        font-family: 'Lora', serif;
-        color: #1C1C1C;
+    body {
+      font-family: 'Lora', serif;
+      color: #1C1C1C;
     }
   </style>
 </head>
 
 <body>
   <!-- Responsive Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark position-relative">
-  <div class="container">
-    <a class="navbar-brand" href="./index.html">
-      <img src="./images/Church_logo.png" alt="Church Logo" class="navbar-logo">
-    </a>
+  <nav class="navbar navbar-expand-lg navbar-dark position-relative">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./images/Church_logo.png" alt="Church Logo" class="navbar-logo">
+      </a>
 
-    <!-- Hamburger Button -->
-    <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Mobile Slide-in Menu -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav ms-lg-auto me-2">
-        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="./about_us.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="./events.html">Events</a></li>
-        <li class="nav-item"><a class="nav-link" href="./ministries.html">Ministries</a></li>
-        <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="./get_involved.html">Get Involved</a></li>
-        <li class="nav-item"><a class="nav-link" href="./contact_us.html">Contact Us</a></li>
-      </ul>
-      <a href="#" class="offer-btn ms-3">Offer</a>
-    </div>
-
-    <!-- Slide Menu for Mobile -->
-    <div class="mobile-slide-menu d-lg-none" id="mobileMenu">
-      <button class="close-btn" onclick="toggleMenu()">×</button>
-      <ul class="navbar-nav text-end pe-3 pt-4">
-        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="./about_us.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="./events.html">Events</a></li>
-        <li class="nav-item"><a class="nav-link" href="./ministries.html">Ministries</a></li>
-        <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="./get_involved.html">Get Involved</a></li>
-        <li class="nav-item"><a class="nav-link" href="./contact_us.html">Contact Us</a></li>
-        <li><a href="#" class="offer-btn d-inline-block mt-2">Offer</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-
-  <div class="container-fluid px-3 py-5 mt-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-12 col-sm-10 col-lg-6">
-        <img src="bootstrap-themes.png" class="d-block mx-auto img-fluid"
-          alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      <!-- Mobile Slide-in Menu -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ms-lg-auto me-2">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about_us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="./events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="./ministries.html">Ministries</a></li>
+          <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="./get_involved.html">Get Involved</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact_us.html">Contact Us</a></li>
+        </ul>
+        <a href="#" class="offer-btn ms-3">Offer</a>
       </div>
-      <div class="col-lg-6">
-        <h1 class="heading_1 display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
-        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-          popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive
-          prebuilt components, and powerful JavaScript plugins.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4">Primary</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-        </div>
+
+      <!-- Slide Menu for Mobile -->
+      <div class="mobile-slide-menu d-lg-none" id="mobileMenu">
+        <button class="close-btn" onclick="toggleMenu()">×</button>
+        <ul class="navbar-nav text-end pe-3 pt-4">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about_us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="./events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="./ministries.html">Ministries</a></li>
+          <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="./get_involved.html">Get Involved</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact_us.html">Contact Us</a></li>
+          <li><a href="#" class="offer-btn d-inline-block mt-2">Offer</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
+
+  <div class="px-4 py-5 my-5 text-center"> <img class="d-block mx-auto mb-4"
+      src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+    <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
+        popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive
+        prebuilt components, and powerful JavaScript plugins.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> <button type="button"
+          class="btn btn-primary btn-lg px-4 gap-3" fdprocessedid="9amxdr">Primary button</button> <button type="button"
+          class="btn btn-outline-secondary btn-lg px-4" fdprocessedid="129pf7">Secondary</button> </div>
+    </div>
   </div>
+
 
   <footer style="background-color: #0A3D62; color: #F8F9FA; padding: 40px 0;">
-  <div class="container" style="text-align: center;">
-    <h4 style="color: #c5dced; margin-bottom: 20px;">Follow Us</h4>
-    
-    <div style="font-size: 1.2rem; margin-bottom: 20px;">
-      <a href="https://www.instagram.com" target="_blank" style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">📸 Instagram</a>
-      <a href="https://www.facebook.com" target="_blank" style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">📘 Facebook</a>
-      <a href="https://www.twitter.com" target="_blank" style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">🐦 Twitter</a>
-      <a href="https://wa.me/yourwhatsapplink" target="_blank" style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">💬 WhatsApp</a>
+    <div class="container" style="text-align: center;">
+      <h4 style="color: #c5dced; margin-bottom: 20px;">Follow Us</h4>
+
+      <div style="font-size: 1.2rem; margin-bottom: 20px;">
+        <a href="https://www.instagram.com" target="_blank"
+          style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">📸 Instagram</a>
+        <a href="https://www.facebook.com" target="_blank"
+          style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">📘 Facebook</a>
+        <a href="https://www.twitter.com" target="_blank"
+          style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">🐦 Twitter</a>
+        <a href="https://wa.me/yourwhatsapplink" target="_blank"
+          style="margin: 0 15px; color: #F8F9FA; text-decoration: none;">💬 WhatsApp</a>
+      </div>
+
+      <p style="font-size: 0.9rem; color: #E9F1F7;">&copy; 2025 Friends Garden AG Church. All rights reserved.</p>
     </div>
+  </footer>
 
-    <p style="font-size: 0.9rem; color: #E9F1F7;">&copy; 2025 Friends Garden AG Church. All rights reserved.</p>
-  </div>
-</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Add AOS JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
-
-<script src="nav-toggle.js"></script>
+  <script src="nav-toggle.js"></script>
 
 </body>
+
 </html>
